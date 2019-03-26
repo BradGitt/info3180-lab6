@@ -23,8 +23,18 @@
                 <div class="text-center">
                     <img src="/static/images/logo.png" alt="VueJS Logo">
                     <h1>{{ welcome }}</h1>
+                   
                 </div>
+                <div class="news">
+                     <h2>News</h2>
+                     <ul class="news__list">
+                     <li v-for="article in articles"
+                    class="news__item">{{ article.title }}</li>
+                     </ul>
+                    <div> 
+                 
             </div>
+       
         </main>
         <app-footer></app-footer>
     </div>
